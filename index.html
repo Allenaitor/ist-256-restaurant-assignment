@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billy Bob's Burgers & Subs</title>
+
+    <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+<div class="container">
+    <div class="title">
+        <h1>Billy Bob's Burgers & Subs</h1>
+        <h2>"Food with attitude!"</h2>
+        <hr>
+    </div>
+
+    <form method="post">
+
+        <legend>Customer Burger Order</legend>
+
+        <div>
+            <label for="first-name" class="form-label">First Name:</label>
+            <input type="text" name="first-name" class="form-control" id="first-name"/>
+        </div>
+
+        <div>
+            <label for="last-name" class="form-label">Last Name:</label>
+            <input type="text" name="last-name" class="form-control" id="last-name" />
+        </div>
+
+        <div >
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" class="form-control" id="email" />
+        </div>
+
+        <div>
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" name="password" class="form-control" id="password"/>
+        </div>
+        <div id="passwordHelpBlock" class="form-text">
+            Create a password for future orders.
+        </div>
+
+        <hr>
+
+        <div>
+            <label for="bread" class="form-label">Bread:</label>
+            <select class="form-select" name="bread" id="bread">
+                <option value="gluten-free">Gluten Free Roll</option>
+                <option value="potato-roll">Potato Roll</option>
+                <option value="none">No Bread</option>
+            </select>
+        </div>
+        <br>
+        <div class=form-check">
+            <label class="form-label">Patty:</label><br>
+            <label><input class="form-check-input" type="radio" name="patty" value="bean"/> Black Bean Patty</label><br>
+            <label><input class="form-check-input" type="radio" name="patty" value="burger"/> Burger Patty</label><br>
+            <label><input class="form-check-input" type="radio" name="patty" value="turkey"/> Turkey Patty</label>
+        </div>
+        <br>
+        <div class=form-check">
+            <label class="form-label">Cheese:</label><br>
+            <label><input class="form-check-input" type="radio" name="cheese" value="american"/> American</label><br>
+            <label><input class="form-check-input"type="radio" name="cheese" value="cheddar"/> Cheddar</label><br>
+            <label><input class="form-check-input" type="radio" name="cheese" value="swiss"/> Swiss</label>
+        </div>
+        <br>
+        <div>
+            <label for="toppings" class="form-label">Choose multiple toppings:</label><br>
+            <select name="toppings" class="form-select" id="toppings" multiple="multiple">
+                <option selected value="none">None</option>
+                <option value="bacon">Bacon Strips</option>
+                <option value="pickle">Dill Pickle Chips</option>
+                <option value="lettuce">Shredded Lettuce</option>
+                <option value="onions">Sliced Onions</option>
+                <option value="tomatoes">Sliced Tomatoes</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-check">
+            <label ><input class="form-check-input" name="fries" value="yes" type="checkbox" /> Include a serving of "Side Fries" (+$2.50)</label>
+        </div>
+
+        <hr>
+
+        <div>
+            <label class="form-label">Comments: </label>
+            <textarea class="form-control" name="comment" rows="3"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" class="btn btn-primary" value="Submit" />
+            <input class="btn btn-secondary" type="reset" value="Reset">
+        </div>
+        <br>
+
+    </form>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
